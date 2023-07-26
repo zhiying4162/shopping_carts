@@ -2,9 +2,13 @@
 	session_start();
 	$Id=$_GET['Id'];
 
-	if(!isset($_SESSION['Name']) ){
+	if(!isset($_SESSION['IDA']) ){
 		$_SESSION["IDA"] = array();
+	}
+	if(!isset($_SESSION['NameA']) ){
 		$_SESSION["NameA"]= array();
+	}
+	if(!isset($_SESSION['PriceA']) ){
 		$_SESSION["PriceA"]= array();
 	}
 	
